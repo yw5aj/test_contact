@@ -27,7 +27,7 @@ include $(FRAMEWORK_DIR)/moose.mk
 ALL_MODULES                 := no
 
 CHEMICAL_REACTIONS          := no
-CONTACT                     := no
+CONTACT                     := yes
 EXTERNAL_PETSC_SOLVER       := no
 FLUID_PROPERTIES            := no
 FUNCTIONAL_EXPANSION_TOOLS  := no
@@ -41,7 +41,7 @@ RDG                         := no
 RICHARDS                    := no
 SOLID_MECHANICS             := no
 STOCHASTIC_TOOLS            := no
-TENSOR_MECHANICS            := no
+TENSOR_MECHANICS            := yes
 XFEM                        := no
 
 include $(MOOSE_DIR)/modules/modules.mk

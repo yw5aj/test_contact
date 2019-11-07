@@ -1,0 +1,22 @@
+# An explanation and results for the full runs of these inputs files are given in the contact documentation
+
+[Tests]
+  [frictionless-nodal-min-lm-nodal-disp-coarse]
+    type = 'Exodiff'
+    input = 'frictionless-nodal-min-lm-nodal-disp.i'
+    exodiff = 'frictionless-nodal-min-lm-nodal-disp_out.e'
+    mesh_mode = 'REPLICATED'
+    requirement = 'We will solve the frictionless bouncing block problem with nodal constraint enforcement, nodal application of forces, and min NCP function'
+    cli_args = "Mesh/file=long-bottom-block-1elem-blocks-coarse.e Executioner/end_time=50 Postprocessors/active=''"
+    allow_test_objects = true
+  []
+  [frictionless-nodal-fb-lm-nodal-disp-coarse]
+    type = 'Exodiff'
+    input = 'frictionless-nodal-fb-lm-nodal-disp.i'
+    exodiff = 'frictionless-nodal-fb-lm-nodal-disp_out.e'
+    mesh_mode = 'REPLICATED'
+    requirement = 'We will solve the frictionless bouncing block problem with nodal constraint enforcement, nodal application of forces, and fb NCP function'
+    cli_args = "Mesh/file=long-bottom-block-1elem-blocks-coarse.e Executioner/end_time=50 Postprocessors/active=''"
+    allow_test_objects = true
+  []  
+[]
