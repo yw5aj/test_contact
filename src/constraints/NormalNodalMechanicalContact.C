@@ -13,7 +13,7 @@
 #include "SystemBase.h"
 #include "Assembly.h"
 
-registerMooseObject("TestContactTestApp", NormalNodalMechanicalContact);
+registerMooseObject("TestContactApp", NormalNodalMechanicalContact);
 
 template <>
 InputParameters
